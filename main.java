@@ -2,18 +2,17 @@ public class main {
     public static void main(String[] args) {
         System.out.println("Starting Hospital Management System Simulation...\n");
 
-        // Create module instances
-        PatientRecords patientRecords = new PatientRecords();
-        Billing billing = new Billing();
-        EmergencyAlerts emergencyAlerts = new EmergencyAlerts();
+        // Simulate module operations -- change hard-coded values as needed
+        String patientName = "Cynthia Erivo";
+        String treatment = "Voice Box Damage";
+        String alertMessage = "Code Black in Ward 1";
 
-        // Simulate module operations
-        patientRecords.updatePatientRecord("John Doe", "Flu Treatment");
-        billing.generateBill("John Doe", 1200.50);
-        emergencyAlerts.triggerAlert("Cardiac arrest in Ward 5!");
+        PatientRecords.patientRecord(patientName, treatment);
+        Billing.billing(patientName, 1200.50);
+        EmergencyAlerts.triggerAlert(alertMessage);
 
-        // Verify Singleton behavior
-        Logger logger1 = Logger.getInstance();
+        // verify Singleton behavior
+        Logger logger1 = Logger.getInstance(); // singleton behavior shown through getInstance
         Logger logger2 = Logger.getInstance();
 
         System.out.println("\nChecking Singleton behavior...");
@@ -25,6 +24,6 @@ public class main {
 
         // Close logger safely
         logger1.close();
-        System.out.println("\nLogging completed. Check 'hospital_logs.txt' for output.");
+        System.out.println("\nLogging completed and saved in text file.");
     }
 }

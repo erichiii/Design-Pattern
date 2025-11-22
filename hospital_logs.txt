@@ -1,6 +1,12 @@
-=== Hospital Management System Log Started: 2025-11-05T14:53:47.813270700 ===
+=== Hospital Management System Log Started: 2025-11-22T20:31:27.890402700 ===
 [PatientRecords] Updated record for John Doe with treatment: Flu Treatment
-[Billing] Generated bill for John Doe - Amount: ?1200.5
+[Billing] Invoice generated for John Doe: ₱1200.5
 [EmergencyAlerts] ALERT: Cardiac arrest in Ward 5!
-=== Log Ended: 2025-11-05T14:53:47.827271 ===
+=== Log Ended: 2025-11-22T20:31:27.904396300 ===
+
+=== Hospital Management System Log Started: 2025-11-22T20:34:25.931159500 ===
+[PatientRecords] Updated record for Cynthia Erivo with treatment: Voice Box Damage
+[Billing] Invoice generated for Cynthia Erivo: ₱1200.5
+[EmergencyAlerts] ALERT: Code Black in Ward 1
+=== Log Ended: 2025-11-22T20:34:25.952159 ===
 

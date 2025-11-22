@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 public class PatientRecords {
-    private Logger logger = Logger.getInstance();
+    private PatientRecords() { }
 
-    public void updatePatientRecord(String patientName, String treatment) {
-        System.out.println("Updating patient record for: " + patientName);
-        logger.log("[PatientRecords] Updated record for " + patientName + " with treatment: " + treatment);
-=======
-
-public class PatientRecords {
-    public void admitPatient(String name) {
+    public static void patientRecord(String name, String treatment) {
         Logger logger = Logger.getInstance();
-        logger.log("Patient admitted: " + name);
->>>>>>> 096108abc15c288c5a9b675eccd82839164af327
+        logger.log("[PatientRecords] Updated record for " + name + " with treatment: " + treatment);
     }
 }
